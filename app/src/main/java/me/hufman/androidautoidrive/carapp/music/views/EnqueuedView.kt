@@ -71,6 +71,9 @@ class EnqueuedView(val state: RHMIState, val musicController: MusicController, v
 	}
 
 	fun initWidgets(playbackView: PlaybackView) {
+		titleLabelComponent.setProperty(RHMIProperty.PropertyId.CUTTYPE, 4)
+		subtitleLabelComponent.setProperty(RHMIProperty.PropertyId.CUTTYPE, 4)
+
 		// this is required for pagination system
 		listComponent.setProperty(RHMIProperty.PropertyId.VALID, false)
 
